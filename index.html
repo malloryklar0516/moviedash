@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Releases</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/project-1.css"/>
+</head>
+
+<body>
+    <h1>GROUP 4 PROJECT</h1>
+    
+    <main>
+      <div id="list">
+        <!-- this is the list where user can add/remove movies from local storage -->
+        <h4 class="movie-list-header">Must See List</h4>
+        <ul class="movie-list"></ul>
+    </div>
+
+    <div class="row">
+      <h4>New Releases</h4>
+     
+        <div class="col s12 m12">
+          <p style="color:black" class="instructions"> Click on any movie title to add a movie to your Must See List</p>
+          <div class="card">
+            <div style="font-weight: bold"; class="card-title card-panel pink lighten-2 title barbie-title">Card Title</div>
+            <div class="card-content movie-info">
+              <p class ="barbie-rating"></p>
+              <p class ="barbie-runtime"></p>
+              <p class="barbie-genre"></p>
+            </div>
+            <div class="video-container">
+                <div id="barbie-player"></div>
+                <!-- <span class="card-title">Card Title</span> -->
+              </div>
+              <div class="barbie-footer"></div>
+          </div>
+          <div class="card">
+            <div style="font-weight: bold"; class="card-title card-panel pink lighten-2  opp-title title">Card Title</div>
+            <div class="card-content movie-info">
+              <p class ="opp-rating"></p>
+              <p class ="opp-runtime"></p>
+              <p class="opp-genre"></p>
+            </div>
+            <div class="video-container">
+                <div id="opp-player"></div>
+                <!-- <span class="card-title">Card Title</span> -->
+              </div>
+              <div class="opp-footer"></div>
+          </div>
+          <div class="card">
+            <div style="font-weight: bold"; class="card-title card-panel pink lighten-2  bb-title title">Card Title</div>
+            <div class="card-content movie-info">
+              <p class ="bb-rating"></p>
+              <p class ="bb-runtime"></p>
+              <p class="bb-genre"></p>
+            </div>
+            <div class="video-container">
+                <div id="bb-player"></div>
+                <!-- <span class="card-title">Card Title</span> -->
+              </div>
+              <div class="bb-footer"></div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    </main>
+<script src="assets/project-1.js"></script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
