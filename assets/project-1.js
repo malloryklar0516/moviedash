@@ -144,7 +144,7 @@ function onYouTubeIframeAPIReady() {
     width: "490",
     videoId: "bK6ldnjE3Y0",
     host: 'https://www.youtube.com',
-    origin: window.location.href,,
+    origin: window.location.href,
     playerVars: {
       playsinline: 1,
       autoplay: 0,
