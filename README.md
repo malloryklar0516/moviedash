@@ -38,9 +38,5 @@ MIT
 
 This project will be revisited in the near future. The team will update fuctionality so that a User can simply search a movie by title and that movies information and trailer will display. (As opposed to our current currated list)
 
-## Project Link
-
-https://vishalmanglani7.github.io/project-1-front-end/
-
 ## Technologies Used
 OMDB API, Youtube API, HTML, CSS, JavaScript, Materialize, Jquery
