@@ -128,6 +128,8 @@ function onYouTubeIframeAPIReady() {
     height: "280",
     width: "490",
     videoId: "pBk4NYhWNMM",
+    host: 'https://www.youtube.com',
+    origin: 'https://malloryklar0516.github.io/moviedash/',
     playerVars: {
       playsinline: 1,
       autoplay: 0,
@@ -141,6 +143,8 @@ function onYouTubeIframeAPIReady() {
     height: "280",
     width: "490",
     videoId: "bK6ldnjE3Y0",
+    host: 'https://www.youtube.com',
+    origin: 'https://malloryklar0516.github.io/moviedash/',
     playerVars: {
       playsinline: 1,
       autoplay: 0,
@@ -154,6 +158,8 @@ function onYouTubeIframeAPIReady() {
     height: "280",
     width: "490",
     videoId: "vS3_72Gb-bI",
+    host: 'https://www.youtube.com',
+    origin: 'https://malloryklar0516.github.io/moviedash/',
     playerVars: { playsinline: 1, autoplay: 0 },
     events: { onReady: onPlayerReady, onStateChange: onPlayerStateChange },
   });
