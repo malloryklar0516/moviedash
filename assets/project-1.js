@@ -26,9 +26,10 @@ function startApp() {
     $(".barbie-title").on("click", function () {
       if (!barbieClicked) {
         seeList.unshift(barbieTitle);
-        window.localStorage.setItem("seeList", JSON.stringify(seeList));
+        localStorage.setItem("seeList", JSON.stringify(seeList));
+        const barTitle = JSON.parse(localStorage.getItem("seeList"));
         $(".movie-list").append(
-          "<li class='bar'>" + window.localStorage.getItem("barbie-title") + "</li>"
+          "<li class='bar'>" + barTitle[0] + "</li>"
         );
         barbieClicked = true;
       }
@@ -59,9 +60,10 @@ function startApp() {
       $(".opp-title").on("click", function () {
         if (!oppClicked) {
           seeList.unshift(oppTitle);
-          window.localStorage.setItem("seeList", JSON.stringify(seeList));
+          localStorage.setItem("seeList", JSON.stringify(seeList));
+          const OTitle = JSON.parse(localStorage.getItem("seeList"))
           $(".movie-list").append(
-            "<li class='opp'>" + window.localStorage.getItem("opp-title") + "</li>"
+            "<li class='opp'>" + OTitle[0] + "</li>"
           );
           oppClicked = true;
         }
@@ -93,9 +95,10 @@ function startApp() {
         $(".bb-title").on("click", function () {
           if (!bbClicked) {
             seeList.unshift(bbTitle);
-            window.localStorage.setItem("seeList", JSON.stringify(seeList));
+            localStorage.setItem("seeList", JSON.stringify(seeList));
+            const BeetleTitle = JSON.parse(localStorage.getItem("seeList"))
             $(".movie-list").append(
-              "<li class='bb'>" + window.localStorage.getItem("bb-title") + "</li>"
+              "<li class='bb'>" + BeetleTitle[0] + "</li>"
             );
             bbClicked = true;
           }
@@ -139,7 +142,7 @@ function onYouTubeIframeAPIReady() {
       onStateChange: onPlayerStateChange,
     },
   });
-  oppPlayer = new YT.Player("opp-player", {
+  oppPlayer = new window.YT.Player("opp-player", {
     height: "280",
     width: "490",
     videoId: "bK6ldnjE3Y0",
@@ -154,7 +157,7 @@ function onYouTubeIframeAPIReady() {
       onStateChange: onPlayerStateChange,
     },
   });
-  bbPlayer = new YT.Player("bb-player", {
+  bbPlayer = new window.YT.Player("bb-player", {
     height: "280",
     width: "490",
     videoId: "vS3_72Gb-bI",
