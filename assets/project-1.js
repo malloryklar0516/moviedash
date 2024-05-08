@@ -17,7 +17,7 @@ function startApp() {
     $(".barbie-rating").text("Rated: " + response.Rated);
     $(".barbie-runtime").text("Runtime: " + response.Runtime);
     $(".barbie-genre").text("Genre: " + response.Genre);
-    var seeList = JSON.parse(localStorage.getItem("seeList")) || [];
+    var seeList = JSON.parse(window.localStorage.getItem("seeList")) || [];
     var barbieTitle = response.Title;
     var barbieClicked = false;
 
@@ -26,9 +26,9 @@ function startApp() {
     $(".barbie-title").on("click", function () {
       if (!barbieClicked) {
         seeList.unshift(barbieTitle);
-        localStorage.setItem("seeList", JSON.stringify(seeList));
+        window.localStorage.setItem("seeList", JSON.stringify(seeList));
         $(".movie-list").append(
-          "<li class='bar'>" + localStorage.getItem("barbie-title") + "</li>"
+          "<li class='bar'>" + window.localStorage.getItem("barbie-title") + "</li>"
         );
         barbieClicked = true;
       }
@@ -59,9 +59,9 @@ function startApp() {
       $(".opp-title").on("click", function () {
         if (!oppClicked) {
           seeList.unshift(oppTitle);
-          localStorage.setItem("seeList", JSON.stringify(seeList));
+          window.localStorage.setItem("seeList", JSON.stringify(seeList));
           $(".movie-list").append(
-            "<li class='opp'>" + localStorage.getItem("opp-title") + "</li>"
+            "<li class='opp'>" + window.localStorage.getItem("opp-title") + "</li>"
           );
           oppClicked = true;
         }
@@ -93,9 +93,9 @@ function startApp() {
         $(".bb-title").on("click", function () {
           if (!bbClicked) {
             seeList.unshift(bbTitle);
-            localStorage.setItem("seeList", JSON.stringify(seeList));
+            window.localStorage.setItem("seeList", JSON.stringify(seeList));
             $(".movie-list").append(
-              "<li class='bb'>" + localStorage.getItem("bb-title") + "</li>"
+              "<li class='bb'>" + window.localStorage.getItem("bb-title") + "</li>"
             );
             bbClicked = true;
           }
