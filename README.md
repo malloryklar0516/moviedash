@@ -30,6 +30,9 @@ THEN I notice my screen scroll back to the infomation and trailer for this movie
 
 ![screenshot of site](https://github.com/VishalManglani7/project-1-front-end/blob/main/assets/Screenshot%202023-09-11%20at%2012.41.31%20PM.png)
 
+## Developers
+Mallory and Vishal
+
 ## License
 
 MIT
